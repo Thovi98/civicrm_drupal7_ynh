@@ -73,7 +73,8 @@ pushd "$install_dir"
 	# _ynh_exec_with_drush_php drush "@$app" pm-enable -y ldap_servers ldap_user ldap_authentication ldap_authorization ldap_authorization_drupal_role
 	_ynh_exec_with_drush_php drush "@$app" pm-download l10n_update-7.x-2.7
 	_ynh_exec_with_drush_php drush "@$app" pm-enable -y l10n_update
-	_ynh_exec_with_drush_php drush "@$app" "$language" locale -y
+	_ynh_exec_with_drush_php drush "@$app" en locale -y
+	_ynh_exec_with_drush_php drush "@$app" cc all
 	_ynh_exec_with_drush_php drush "@$app" language-add "$language"
 	_ynh_exec_with_drush_php drush "@$app" language-default "$language"
 	_ynh_exec_with_drush_php drush "@$app" cache-clear drush
