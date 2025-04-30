@@ -74,7 +74,7 @@ pushd "$install_dir"
 	_ynh_exec_with_drush_php drush "@$app" pm-download l10n_update-7.x-2.7
 	_ynh_exec_with_drush_php drush "@$app" pm-enable -y l10n_update
 	_ynh_exec_with_drush_php drush "@$app" pm-enable locale -y
-	_ynh_exec_with_drush_php drush "@$app" pm-enable language -y
+	_ynh_exec_with_drush_php drush "@$app" pm-list --type=Module | grep language
 	_ynh_exec_with_drush_php drush "@$app" cc all
 	_ynh_exec_with_drush_php drush "@$app" language-add "$language"
 	_ynh_exec_with_drush_php drush "@$app" language-default "$language"
