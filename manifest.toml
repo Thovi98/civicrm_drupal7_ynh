@@ -70,12 +70,12 @@ ram.runtime = "128M"
 
     [resources.sources]
     [resources.sources.civicrm-drupal]
-    url = "https://download.civicrm.org/civicrm-5.80.1-drupal.tar.gz"
-    sha256 = "72a5453210bb32e53fce2db8ae22c59fdce7cadc62bb2f61fb623b68d93e7ac0"
+    url = "https://download.civicrm.org/civicrm-6.1.2-drupal.tar.gz"
+    sha256 = "8f03875215935caf50d716b64b309c1d5fda9eaf80282874601eaa30983db1b6"
 
     [resources.sources.civicrm-l10n]
-    url = "https://download.civicrm.org/civicrm-5.80.1-l10n.tar.gz"
-    sha256 = "504c5cef2cf3c38d87cdf7e01da1cbb3c2ff090ba4a75990fc76a4ad2448f20a"
+    url = "https://download.civicrm.org/civicrm-6.1.2-l10n.tar.gz"
+    sha256 = "f5abcdb0bcd68370cacaaad719ae2fd2352c80bc9964836542b4a6ace411d952"
 
     [resources.system_user]
 
